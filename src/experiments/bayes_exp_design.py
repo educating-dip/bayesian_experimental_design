@@ -225,7 +225,7 @@ def coordinator(cfg : DictConfig) -> None:
                 
                 # empirical g-prior coefficient 
                 empirical_g_coeff = cfg.bed.g_prior_scale_fct * (
-                    ((observation**2).sum() -  torch.exp(log_noise_model_variance_obs).cpu()) / (
+                    ((observation**2) -  torch.exp(log_noise_model_variance_obs).cpu()).sum() / (
                         num_params_under_priors * observation.numel() * torch.exp(log_noise_model_variance_obs).cpu())
                     ).to(bayesianized_model.store_device)
 

@@ -393,7 +393,7 @@ def bed_optimal_angles_search(
                             bayesianized_model.load_state_dict(bayesianized_model_state_dict)
 
                             empirical_g_coeff = g_prior_scale_fct * (
-                                ((obs**2).sum() -  torch.exp(log_noise_model_variance_obs).cpu()) / (
+                                ((obs**2) -  torch.exp(log_noise_model_variance_obs).cpu()).sum() / (
                                     num_params_under_priors * obs.numel() * torch.exp(log_noise_model_variance_obs).cpu())
                                 ).to(bayesianized_model.store_device)
 
