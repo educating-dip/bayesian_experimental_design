@@ -1,0 +1,30 @@
+optim:
+  iterations: 1200
+  lr: 0.01
+  include_predcp: True
+  gamma: ${net.optim.gamma}
+  scaling_fct: 0.5
+  tv_samples: 1000
+priors:
+  lengthscale_init: 0.1
+  variance_init: 1
+  include_normal_priors: True
+  clamp_variances: True
+  clamp_variances_min_log: -4.5
+cg_impl:
+  max_cg_iter: 50
+  tolerance: 1
+  early_stop_if_not_estimate_log_det: False
+preconditioner:
+  name: 'low_rank'
+  reduced_rank_dim: 150
+  oversampling_param: 10
+  update_freq: 100
+  estimate_log_det: True
+impl:
+  use_fwAD_for_jvp: True
+  use_fwAD_for_jac_mat: False
+  vec_batch_size: 2
+  use_preconditioner: False
+  estimate_log_det: True
+  log_grad_cg_residual: True

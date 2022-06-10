@@ -1,0 +1,278 @@
+0.05:
+  mll_prior:
+    EIG:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:27:52.247385Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:28:10.131864Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:55:04.925306Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:55:06.780622Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:55:51.984006Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:59:08.095771Z
+        # - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T00:18:12.604337Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:16.198171Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:40.265778Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:25:59.393857Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:27:41.672516Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:32:11.758939Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:35:30.781845Z
+    var:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-27T13:14:17.872199Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-26T13:29:54.410225Z
+  mll_prior_refinement:
+    EIG:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:07:07.098383Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:18:15.818751Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:19:35.921386Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:20:28.715441Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:22:32.281917Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:22:37.382231Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:16.195008Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:23:19.110846Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:25:59.394946Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:28:19.105561Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:32:12.055889Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:38:57.114408Z
+    var:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T20:49:34.106887Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T20:49:48.906044Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T20:49:59.851426Z
+      tv:
+        - diamant.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:13:06.663231Z
+  g_prior:  # updating A
+    EIG:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.199745Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.200380Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201388Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201679Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201751Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.202212Z
+        # - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T00:20:26.058659Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:16.196104Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:24:24.913008Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:26:03.590466Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:28:19.161067Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:32:12.071768Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:38:56.946231Z
+    var:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-29T12:34:42.126977Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:06:05.394588Z
+      tv:
+        - diamant.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:13:21.958885Z
+  g_prior_refinement:
+    EIG:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:10:25.347525Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:18:18.188347Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:19:35.671265Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:20:28.714768Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:22:08.400731Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:22:33.742419Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:16.195063Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:24:51.883023Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:27:41.673505Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:29:18.005240Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:36:10.017451Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:39:30.104108Z
+    var:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:07:07.097777Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:10:25.347644Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:18:15.526795Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:19:54.769116Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:20:28.714902Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:22:33.691172Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:16.195508Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:22:16.195648Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:25:59.394068Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:27:41.673030Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:32:37.110022Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:35:32.190209Z
+  linear_model_isotropic:
+    EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T21:46:12.276916Z
+    diagonal_EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T21:47:30.554916Z
+    var:
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.019791Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.020228Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.019375Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.019701Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.020693Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.019687Z
+  linear_model_gp:
+    EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T21:47:51.729641Z
+    diagonal_EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T21:46:56.583149Z
+    var:
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:15:39.736666Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:15:39.736139Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:15:39.737237Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:29:11.667205Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:29:11.666998Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:29:11.667096Z
+  baseline:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-27T13:18:33.454888Z
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T15:57:46.285225Z
+  random:
+    random:
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T21:13:41.553524Z
+0.1:
+  mll_prior:
+    EIG:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T22:59:33.639901Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T23:03:49.093586Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T23:03:49.093792Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T23:03:51.416278Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T23:07:28.624144Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/dip_mll_designs/outputs/2022-05-30T23:24:51.726197Z
+        # - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T00:18:37.623040Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:42:50.081996Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:05.539334Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:59.424353Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:56:34.388249Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:56:34.390449Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:06:30.689354Z
+    var:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-27T13:14:41.393485Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-26T13:29:44.276633Z
+  mll_prior_refinement:
+    EIG:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:25:40.612505Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:28:50.198280Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:31:26.419909Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:33:04.745019Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:34:32.209026Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T22:57:28.507737Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:50:56.978273Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:29.212721Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:53:29.012555Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:56:34.388252Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:03:43.967119Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:05:59.263487Z
+    var:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T20:52:20.687634Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T20:52:29.353768Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T20:52:40.958858Z
+      tv:
+        - diamant.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:13:17.712103Z
+  g_prior:  # updating A
+    EIG:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.200860Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.200983Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201056Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201112Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201378Z
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/g_prior_designs/outputs/2022-05-30T19:53:48.201916Z
+        # - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T00:20:41.548221Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:51:22.204834Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:45.619666Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:53:28.556090Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:56:34.387382Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:03:39.527169Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:05:59.273248Z
+    var:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-29T10:21:29.773503Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:06:28.810022Z
+      tv:
+        - diamant.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:13:32.255873Z
+  g_prior_refinement:
+    EIG:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:25:40.611531Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:28:22.014812Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:31:27.556735Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:34:11.854220Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T22:57:28.509192Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T23:05:15.788880Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:51:29.579151Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:55.849824Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:54:06.474012Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:56:34.388285Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:03:39.527163Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:06:30.688938Z
+    var:
+      dip:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:25:40.611890Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:28:50.199745Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:30:32.261350Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:31:12.280457Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:34:11.854880Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T22:57:28.507883Z
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:42:50.082438Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:02.796572Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:52:58.094536Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:54:09.401643Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T19:56:34.388312Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_results/outputs/2022-05-31T20:03:39.528747Z
+  linear_model_isotropic:
+    EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:25:54.282663Z
+    diagonal_EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:25:21.316895Z
+    var:
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:20:03.392952Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:20:03.393909Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:20:03.394792Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:20:03.393134Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:23:32.346689Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:23:35.022924Z
+  linear_model_gp:
+    EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:25:35.058570Z
+    diagonal_EIG:
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-30T22:25:46.161157Z
+    var:
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:29:11.666739Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T18:56:22.545948Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T19:18:27.882525Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T19:37:45.677290Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T19:57:48.023654Z
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/hpc_outputs_linear/2022-06-01T20:15:02.021205Z
+  baseline:
+      dip:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-27T13:19:08.731806Z
+      tv:
+        - brain.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T15:58:04.369477Z
+  random:
+    random:
+      tv:
+        - briareos.math.uni-bremen.de:/localdata/jleuschn/experiments/dip_bayesian_ext/outputs/2022-05-31T21:13:50.165288Z

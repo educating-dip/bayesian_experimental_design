@@ -1,0 +1,20 @@
+defaults:
+  - data: rectangles
+  - trafo: simple_ray_trafo
+  - net: unet
+  - lin_params: lin_params
+  - mrglik: mrglik
+  - sample_based_mrglik: sample_based_mrglik
+  - density: density
+  - trn: trainer
+  - baseline: mcdo
+  - bed: rectangles
+seed: 1
+linearize_weights: False
+num_images: 1
+use_double: False
+load_dip_models_from_path: null
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%dT%H:%M:%S.%fZ}
+ignore_gpytorch_numerical_warnings: True

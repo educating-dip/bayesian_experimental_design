@@ -1,0 +1,5 @@
+# @package _global_
+baseline: 
+  name: sgld
+  use_train_test: False
+  bw: 0.05

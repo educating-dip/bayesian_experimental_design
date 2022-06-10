@@ -1,0 +1,12 @@
+# @package _global_
+name: walnut_patches
+image_specs:
+  size: 128
+data_path_test: '/localdata/jleuschn/Walnuts/'  # insert "/path/to/Walnuts/", which should contain a sub-folder "Walnut1/" extracted from Walnut1.zip, download from: https://zenodo.org/record/2686726/files/Walnut1.zip?download=1
+walnut_id: 1
+orbit_id: 2
+slice_ind: 253
+angular_sub_sampling: 1
+noise_specs:
+  noise_type: white
+  stddev: 0.05

@@ -1,0 +1,10 @@
+# @package _group_
+TV_map:
+  tv_scaling: 1
+  iters: 1000
+mcmc:
+  run: True
+  num_warmup: 1000
+  num_samples: 2000
+  lambda_hyper: 1e1
+  sigma: 0.8

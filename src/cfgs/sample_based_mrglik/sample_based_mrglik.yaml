@@ -1,0 +1,43 @@
+EM_cycle:
+  num_cycles: 20
+  mc_samples: 64
+  tied_variance_steps: 1
+  noise_model_variance_obs: 1
+  fixed_noise_variance_steps: 1
+priors:
+  lengthscale_init: 1e-9 # diagonal 
+  variance_init: 0.01
+  clamp_to_lengthscale_init: True
+  include_normal_priors: True
+preconditioner:
+  reduced_rank_dim: 400
+  oversampling_param: 10
+  preconditioner_path: null
+  save_preconditioner: False
+weights_linearization:
+  iterations: 800
+  lr: 5e-4
+linear_cg:
+  method: cg
+  max_cg_iter: 500
+  tolerance: 1e-2
+low_rank_jacobian:
+  load_path: null
+  low_rank_dim: 470
+  oversampling_param: 10
+  use_cpu: True
+  store_on_cpu: True
+  save: False
+impl:
+  compute_test_log_lik: False
+  include_normal_priors: True
+  use_preconditioner: True
+  use_fwAD_for_jvp: True
+  vec_batch_size: 8
+  save_linearized_weights: True
+  use_san_trafo: False
+  assemble_jac: null
+  reduce_model: True
+reduced_model: 
+  exclude_gp_priors_list: []
+  exclude_normal_priors_list: []

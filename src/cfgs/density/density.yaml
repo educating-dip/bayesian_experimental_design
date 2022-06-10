@@ -1,0 +1,58 @@
+block_size_for_approx: 100
+eps_mode: abs
+eps: 0.
+do_eps_sweep: False
+cov_image_eps: null
+cov_obs_mat_eps_mode: auto
+cov_obs_mat_eps: 0.1
+cov_obs_mat_eps_min_for_auto: 0.01
+num_mc_samples: 10000
+exclude_gp_priors_list: []
+exclude_normal_priors_list: []
+impl:
+  reduce_model: True
+compute_single_predictive_cov_block:
+  load_path: null
+  block_idx: null
+  load_mrglik_opt_iter: null
+  override_noise_model_variance_obs: null
+  cov_obs_mat_load_path: null
+  save_full_block: False
+assemble_cov_obs_mat:
+  load_path: null
+  load_mrglik_opt_iter: null
+  sub_slice_batches: null
+merge_single_block_predictive_image_log_probs:
+  load_path_list: null
+merge_cov_obs_mat_sub_slices:
+  load_path_list: null
+estimate_density_from_samples:
+  low_rank_cov_obs_mat: False
+  assemble_jac: null
+  load_cov_obs_mat: False
+  save_cov_obs_mat: False
+  seed: null
+  save_samples: True
+  save_samples_chunk_size: 512
+  samples_load_path_list: null
+  save_block_files: False
+  save_single_result_file: True
+  batch_size: 1024
+eval_assess_layer_contributions:
+  load_file_path: null
+low_rank_jacobian:
+  load_path: null
+  save: False
+  use_closures_for_jac_obs: False
+  use_cpu: False
+  store_on_cpu: False
+  low_rank_dim: 150
+  oversampling_param: 10
+low_rank_cov_obs_mat:
+  low_rank_dim: 500
+  oversampling_param: 10
+estimate_density_block_wise_exact: False
+approx_inversion_using_conj_grad:
+  use_conj_grad_inv: False
+  max_cg_iter: 10
+  tolerance: 1

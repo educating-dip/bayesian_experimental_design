@@ -1,0 +1,34 @@
+total_num_acq_projs: 25
+acq_projs_batch_size: 5
+reconstruct_every_k_step: null
+mc_samples: 3000
+use_EIG: False
+use_diagonal_EIG: False
+use_best_inds_from_path: null
+log_path: ./
+hyperparam_path_baseline: null
+use_alternative_recon: null  # 'fbp', 'tvadam'
+tvadam_hyperparam_path_baseline: null
+compute_equidistant_baseline: False
+init_dip_from_mll: True
+update_network_params: False
+update_prior_hyperparams: mrglik
+override_mrglik_iterations: 100
+use_objective_prior: False
+update_scale_vec_via_refined_jac: False
+g_prior_scale_fct: 1.
+cov_obs_mat_stab_by_tsvd: False
+cov_obs_mat_stab_by_tsvd_reduce_dim_fraction: 0.1
+linear_model_mll_optim:
+  lr: 3e-2
+  n_steps: 250
+  patience: 10
+  use_gp_model: False
+tvadam:
+  lr: 0.001
+  gamma: 3e-3
+  show_pbar: True
+  iterations: 10000
+  loss_function: mse
+  use_relu_out: True
+  log_path: ./

@@ -1,0 +1,17 @@
+# @package _group_
+epochs: 20
+batch_size: 32
+train_len: ${pretraining.train_len}
+lr: 0.001
+lr_min: 0.0001
+max_lr: 0.0005
+weight_decay: 1e-5
+scheduler: onecyclelr
+torch_manual_seed: 1
+num_data_loader_workers: 0
+show_pbar: True
+save_best_learned_params_path: params/model_${name}
+save_learned_params_base_path: params/model_${name}
+save_learned_params_interval: null
+add_randn_mask: False
+log_path: ./pretraining/

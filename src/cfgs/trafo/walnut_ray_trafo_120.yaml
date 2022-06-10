@@ -1,0 +1,9 @@
+# @package _global_
+size: ${image_specs.size}
+ray_trafo_impl: 'custom'
+ray_trafo_custom:
+  name: walnut_single_slice_matrix
+  matrix_path: ${data_path_test}
+  data_path: ${data_path_test}
+  walnut_id: ${walnut_id}
+  orbit_id: ${orbit_id}
