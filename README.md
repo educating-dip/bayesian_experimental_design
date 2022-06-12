@@ -4,12 +4,14 @@
 
 A paper link will be added soon.
 
+Experimental results: [zenodo.org/record/6635902](https://zenodo.org/record/6635902) (includes tensorboard logs and other saved information).
+
 In the following steps, we assume the code from this repository to checked out
 as `$REPO`. For running the commands below, change the working directory by
 `cd $REPO/src/experiments/`.
 
 
-### 1.  Obtain initial DIP reconstruction and run MLL optimization for linearised DIP prior hyperparameters
+### 1.  Obtain initial DIP reconstruction and run MLL optimisation for linearised DIP prior hyperparameters
 
 ```shell
 python bayes_dip.py use_double=True data=rectangles num_images=30 net.optim.gamma=3e-3 net.optim.iterations=19100 noise_specs.stddev=0.05 mrglik.optim.include_predcp=False mrglik.impl.vec_batch_size=25 mrglik.optim.iterations=500 mrglik.priors.clamp_variances=False beam_num_angle=200 angular_sub_sampling=40 mrglik.cg_impl.max_cg_iter=10 mrglik.impl.use_preconditioner=True
