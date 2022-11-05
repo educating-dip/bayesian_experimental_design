@@ -1,4 +1,4 @@
-import torch 
+import torch
 import numpy as np
 from gpytorch.utils.lanczos import lanczos_tridiag_to_diag
 from gpytorch.utils import StochasticLQ
@@ -30,17 +30,17 @@ def generate_probes_gaussian_low_rank(side_length, num_random_probes, log_noise_
     probe_vectors_low_rank = torch.empty(U.shape[1], num_random_probes, dtype=dtype, device=device)
     probe_vectors = probe_vectors_scalar.normal_() * torch.exp(
         log_noise_model_variance_obs).pow(0.5) + (
-        U * L_clamped.pow(0.5)) @ probe_vectors_low_rank.normal_() 
+        U * L_clamped.pow(0.5)) @ probe_vectors_low_rank.normal_()
     return probe_vectors
 
-def generate_closure(ray_trafos, filtbackproj, bayesianized_model, hooked_model, 
-        be_model, be_modules, log_noise_model_variance_obs, vec_batch_size, side_length, 
+def generate_closure(ray_trafos, filtbackproj, bayesianized_model, hooked_model,
+        be_model, be_modules, log_noise_model_variance_obs, vec_batch_size, side_length,
         masked_cov_grads=None, use_fwAD_for_jvp=True, add_noise_model_variance_obs=True):
 
     def closure(v):
         # takes input (side_length x batchsize)
         v = v.T.view(vec_batch_size, *side_length)
-        out = prior_cov_obs_mat_mul(ray_trafos, filtbackproj, bayesianized_model, hooked_model, 
+        out = prior_cov_obs_mat_mul(ray_trafos, filtbackproj, bayesianized_model, hooked_model,
             be_model, be_modules, v, log_noise_model_variance_obs, masked_cov_grads=masked_cov_grads,
             use_fwAD_for_jvp=use_fwAD_for_jvp, add_noise_model_variance_obs=add_noise_model_variance_obs)
         out = out.view(vec_batch_size, np.prod(side_length))
@@ -55,7 +55,7 @@ def stochastic_LQ_logdet_and_solves(closure, probe_vectors, max_cg_iter, toleran
     probe_vectors_scaled = probe_vectors.div(probe_vector_norms) # side_length, num_random_probes
 
     if preconditioner is not None:
-        if name_preconditioner == 'jacobi': 
+        if name_preconditioner == 'jacobi':
             preconditioning_closure = generate_jacobi_closure(preconditioner)
             logdet_correction = preconditioner.log().sum() if estimate_log_det else torch.zeros(1, device=probe_vectors.device)
             conditioned_probes = preconditioning_closure(probe_vectors_scaled)
@@ -65,7 +65,7 @@ def stochastic_LQ_logdet_and_solves(closure, probe_vectors, max_cg_iter, toleran
             logdet_correction = get_log_det_matrix_inversion_lemma(
                 U, L, log_noise_model_variance_obs) if estimate_log_det else torch.zeros(1, device=probe_vectors.device)
             conditioned_probes = preconditioning_closure(probe_vectors_scaled)
-        else: 
+        else:
             raise NotImplementedError
     else:
         preconditioning_closure = None
@@ -83,13 +83,13 @@ def stochastic_LQ_logdet_and_solves(closure, probe_vectors, max_cg_iter, toleran
         (solves, residual_norm) = linear_cg_return_val
 
     # estimate log-determinant
-    if estimate_log_det: 
+    if estimate_log_det:
         slq = StochasticLQ(max_iter=-1, num_random_probes=num_random_probes)
         pos_eigvals, pos_eigvecs = lanczos_tridiag_to_diag(tmat)
         (logdet_term,) = slq.evaluate((side_length, side_length), pos_eigvals, pos_eigvecs, [lambda x: x.log()])
-    else: 
+    else:
         logdet_term = torch.zeros(1, device=probe_vectors.device)
-    
+
     conditioned_scaled_probes = conditioned_probes * probe_vector_norms.pow(2)  # we re-introduce the norms to make sure probes are K=I
     return solves, conditioned_scaled_probes, logdet_term + logdet_correction, residual_norm
 
@@ -97,14 +97,14 @@ def stochastic_LQ_logdet_and_solves(closure, probe_vectors, max_cg_iter, toleran
 def compute_approx_log_det_grad(ray_trafos, filtbackproj,
     bayesianized_model, hooked_model, fwAD_be_model, fwAD_be_modules,
     log_noise_model_variance_obs,
-    vec_batch_size, side_length, 
+    vec_batch_size, side_length,
     use_fwAD_for_jvp=True,
     max_cg_iter=50, tolerance=1,
     name_preconditioner='jacobi', preconditioner=None,
     ignore_numerical_warning=True,
     estimate_log_det=True, early_stop_cg_if_not_estimate_log_det=False,
     ):
-    
+
     grads = {}
 
     # v * (A * J * Σ_θ * J.T * A.T + σ^2_y)
@@ -113,8 +113,8 @@ def compute_approx_log_det_grad(ray_trafos, filtbackproj,
         vec_batch_size, side_length=side_length, masked_cov_grads=None,
         use_fwAD_for_jvp=use_fwAD_for_jvp, add_noise_model_variance_obs=True
         )
-    
-    if preconditioner is not None: 
+
+    if preconditioner is not None:
         if name_preconditioner == 'jacobi':
             probe_vectors = generate_probes_bernoulli(
                 side_length=np.prod(side_length),
@@ -130,7 +130,7 @@ def compute_approx_log_det_grad(ray_trafos, filtbackproj,
                 device=bayesianized_model.store_device,
                 preconditioner=preconditioner
                 )
-        else: 
+        else:
             raise NotImplementedError
     else:
         probe_vectors = generate_probes_bernoulli(
@@ -144,7 +144,7 @@ def compute_approx_log_det_grad(ray_trafos, filtbackproj,
         bayesianized_model, log_noise_model_variance_obs.detach())
 
     solves, cs_probes, log_det_term, residual_norm = stochastic_LQ_logdet_and_solves(
-        main_closure, probe_vectors, 
+        main_closure, probe_vectors,
         max_cg_iter=max_cg_iter, tolerance=tolerance,
         name_preconditioner=name_preconditioner, preconditioner=preconditioner,
         log_noise_model_variance_obs=log_noise_model_variance_obs,
@@ -162,16 +162,16 @@ def compute_approx_log_det_grad(ray_trafos, filtbackproj,
     cs_probes_AJ = cs_probes_AJ_reshape
 
     for gp_prior in bayesianized_model.gp_priors:
-        for param_name in ['lengthscales', 'variances']: 
+        for param_name in ['lengthscales', 'variances']:
             solves_AJSig = vec_weight_prior_cov_mul_base(bayesianized_model,
                 gp_priors_grad_dict[param_name][gp_prior], normal_priors_grad_dict['all_zero'], solves_AJ
                 )
             grad = (solves_AJSig * cs_probes_AJ).sum(dim=1, keepdim=True).mean(dim=0).detach()
-            if param_name == 'lengthscales': 
+            if param_name == 'lengthscales':
                 grads[gp_prior.cov.log_lengthscale] = 0.5 * grad # added 0.5 minimize
-            elif param_name == 'variances': 
+            elif param_name == 'variances':
                 grads[gp_prior.cov.log_variance] = 0.5 * grad
-    
+
     for normal_prior in bayesianized_model.normal_priors:
 
         solves_AJSig = vec_weight_prior_cov_mul_base(bayesianized_model,
@@ -180,11 +180,8 @@ def compute_approx_log_det_grad(ray_trafos, filtbackproj,
         grad = (solves_AJSig * cs_probes_AJ).sum(dim=1, keepdim=True).mean(dim=0).detach()
         grads[normal_prior.log_variance] = 0.5 * grad
 
-    solves_AJSig = vec_weight_prior_cov_mul_base(bayesianized_model,
-        log_noise_variance_obs_grad_dict['gp_prior'], log_noise_variance_obs_grad_dict['normal_prior'], solves_AJ
-        )    
-    grads[log_noise_model_variance_obs] = 0.5 * (solves_AJSig * cs_probes_AJ).sum(dim=1, keepdim=True).mean(dim=0).detach()
-    
+    grads[log_noise_model_variance_obs] = 0.5 * ( (solves * cs_probes ).sum(dim=0, keepdim=True).mean(dim=1) * torch.exp(log_noise_model_variance_obs) ).detach()
+
     return grads, log_det_term, mean_residual
 
 def generate_jacobi_closure(jacobi_vec, eps=1e-3):
@@ -206,9 +203,9 @@ def generate_low_rank_closure(preconditioner):
     def closure(v):
         assert v.shape[0] == mat_.shape[0]
         if len(v.shape) == 1:
-            return mat_ @ v 
+            return mat_ @ v
         elif len(v.shape) == 2:
-            return mat_ @ v 
+            return mat_ @ v
         else:
             raise NotImplementedError
     return closure

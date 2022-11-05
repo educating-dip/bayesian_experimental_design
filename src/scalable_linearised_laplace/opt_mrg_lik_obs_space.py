@@ -134,7 +134,7 @@ def optim_marginal_lik_low_rank(
             
             set_grads_marginal_lik_log_det(bayesianized_model, log_noise_model_variance_obs, grads)
 
-            obs_error_norm = (torch.sum(observation - proj_recon) ** 2) * torch.exp(-log_noise_model_variance_obs)  # σ_y^-2 ||y_delta - A f(theta^*)||_2^2
+            obs_error_norm = torch.sum( ( observation - proj_recon ) ** 2) * torch.exp(-log_noise_model_variance_obs)  # σ_y^-2 ||y_delta - A f(theta^*)||_2^2
             weight_prior_norm = (vec_weight_prior_cov_mul(bayesianized_model, weight_vec, return_inverse=True) @ weight_vec.T).squeeze()
             loss = 0.5 * (obs_error_norm + weight_prior_norm)
 
