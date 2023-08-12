@@ -2,7 +2,7 @@
 
 ![DIP_experimental_design_intro](https://user-images.githubusercontent.com/50658913/172893131-0098c325-fe2a-4985-9644-5a4a6c04e1cc.png)
 
-A paper link will be added soon.
+Paper: https://arxiv.org/abs/2207.05714 (presented at ICML Workshop on Adaptive Experimental Design and Active Learning in the Real World (ReALML) 2022, July 22, Baltimore, MD, USA)
 
 Experimental results: [zenodo.org/record/6635902](https://zenodo.org/record/6635902) (includes tensorboard logs and other saved information).
 
